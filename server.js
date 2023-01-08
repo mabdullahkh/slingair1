@@ -13,7 +13,7 @@ const {
   deleteReservation,
   updateReservation,
 } = require("./handlers");
-port=process.env.PORT||8000;
+const port=process.env.PORT||8000;
 express()
   // Below are methods that are included in express(). We chain them for convenience.
   // --------------------------------------------------------------------------------
