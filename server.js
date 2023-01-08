@@ -57,6 +57,6 @@ express()
   .use(express.static("client/build"))
 
   // Node spins up our server and sets it to listen on port 8000.
-  .listen(port, () => console.log(`Listening on port 8000`));
+  .listen(port, () => console.log (port));
 
  
