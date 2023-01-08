@@ -13,7 +13,7 @@ const {
   deleteReservation,
   updateReservation,
 } = require("./handlers");
-
+port=process.env.PORT||8000;
 express()
   // Below are methods that are included in express(). We chain them for convenience.
   // --------------------------------------------------------------------------------
@@ -57,6 +57,6 @@ express()
   .use(express.static("client/build"))
 
   // Node spins up our server and sets it to listen on port 8000.
-  .listen(process.env.PORT||8000, () => console.log(`Listening on port 8000`));
+  .listen(port, () => console.log(`Listening on port 8000`));
 
  
