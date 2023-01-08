@@ -43,7 +43,7 @@ express()
   // Nothing to modify below this line
 
  
-  
+  .use(express.static("client/build"))
 
   // this is our catch all endpoint.
   .get("*", (req, res) => {
@@ -54,7 +54,7 @@ express()
   })
   
 
-  .use(express.static("client/build"))
+  
 
   // Node spins up our server and sets it to listen on port 8000.
   .listen(port, () => console.log ("port"+port));
